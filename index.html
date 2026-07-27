@@ -1,302 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shayaali ❤️</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<title>Happy 15th Birthday Shayaali ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- ============================= -->
-<!-- Background Decorations -->
-<!-- ============================= -->
+<!-- ================= LOADER ================= -->
 
-<div class="background">
+<div id="loader">
 
-<div class="stars"></div>
+    <div class="loader-heart">💖</div>
 
-<div class="sparkles"></div>
+    <h2>Creating Something Magical...</h2>
 
-<div class="floating-hearts"></div>
-
-<div class="floating-butterflies"></div>
-
-<div class="flower-petals"></div>
-
-</div>
-
-<!-- ============================= -->
-<!-- Background Music -->
-<!-- ============================= -->
-
-<audio id="bgMusic" loop>
-
-<source src="music/birthday.mp3" type="audio/mpeg">
-
-</audio>
-
-<button id="musicButton">
-
-🔊
-
-</button>
-
-<!-- ============================= -->
-<!-- Hero Section -->
-<!-- ============================= -->
-
-<section class="hero">
-
-<h2 class="smallText">
-
-To The Most Beautiful Girl
-
-</h2>
-
-<h1 id="typingText"></h1>
-
-<p class="subtitle">
-
-Today isn't just another day...
-
-It's the day someone incredibly special came into this world.
-
-</p>
-
-<h3 class="birthdayText">
-
-✨ Happy 15th Birthday Shayaali ✨
-
-</h3>
-
-<button id="openBtn">
-
-Open Your Little World 💖
-
-</button>
-
-</section>
-<!-- ================================= -->
-<!-- Floating Love Notes -->
-<!-- ================================= -->
-
-<div class="loveNotes">
-
-    <div class="note note1">💌 You're my favourite person.</div>
-
-    <div class="note note2">🌸 The prettiest smile ever.</div>
-
-    <div class="note note3">🦋 You're my comfort.</div>
-
-    <div class="note note4">✨ My happiest hello.</div>
-
-    <div class="note note5">💖 I love you.</div>
-
-</div>
-
-<!-- ================================= -->
-<!-- Scroll Down Indicator -->
-<!-- ================================= -->
-
-<div class="scrollIndicator">
-
-    <span>Scroll Down</span>
-
-    <div class="mouse">
-
-        <div class="wheel"></div>
-
+    <div class="loading-bar">
+        <span></span>
     </div>
 
 </div>
 
-<!-- ================================= -->
-<!-- Decorative Floating Objects -->
-<!-- ================================= -->
+<!-- =============== BACKGROUND ================= -->
 
-<div class="decorations">
+<div class="gradient-bg"></div>
 
-<span class="floating floating1">🌸</span>
+<div id="particles"></div>
 
-<span class="floating floating2">🩷</span>
+<!-- =============== MUSIC ================= -->
 
-<span class="floating floating3">🦋</span>
+<div class="music-player">
 
-<span class="floating floating4">✨</span>
+    <button id="musicBtn">
 
-<span class="floating floating5">🌷</span>
+        ♫
 
-<span class="floating floating6">⭐</span>
-
-<span class="floating floating7">💖</span>
-
-<span class="floating floating8">🌺</span>
-
-<span class="floating floating9">🤍</span>
-
-<span class="floating floating10">🫶</span>
+    </button>
 
 </div>
 
-<!-- ================================= -->
-<!-- Cute Quote -->
-<!-- ================================= -->
+<audio
+id="bgMusic"
+loop>
 
-<section class="quoteSection">
+<source src="The Neighbourhood - Reflections (Lyrics).mp3" type="audio/mpeg">
 
-<h2>
+</audio>
 
-"You make ordinary days feel magical."
+<!-- =============== MAIN ================= -->
 
-</h2>
+<section class="main">
 
-<p>
+<div class="glass-card">
 
-Thank you for being the sweetest part of my life.
+    <h3 class="welcome">
 
-</p>
+        Welcome 🌸
 
-</section>
+    </h3>
 
-<!-- ================================= -->
-<!-- Tiny Countdown Card -->
-<!-- ================================= -->
+    <h1>
 
-<section class="countdownCard">
+        Shayaali's Birthday Surprise
 
-<h2>
+    </h1>
 
-Today...
+    <!-- Countdown -->
 
-</h2>
+    <div class="countdown">
 
-<h1>
+        <div>
 
-15 Amazing Years
+            <span id="days">00</span>
 
-</h1>
+            <small>Days</small>
 
-<p>
+        </div>
 
-Of making the world a brighter and happier place.
+        <div>
 
-</p>
+            <span id="hours">00</span>
 
-</section>
+            <small>Hours</small>
 
-<!-- ================================= -->
-<!-- Continue Button -->
-<!-- ================================= -->
+        </div>
 
-<section class="continueSection">
+        <div>
 
-<a href="memories.html">
+            <span id="minutes">00</span>
 
-<button class="continueButton">
+            <small>Minutes</small>
 
-Let's Relive Our Memories 📸
+        </div>
 
-</button>
+        <div>
 
-</a>
+            <span id="seconds">00</span>
 
-</section>
+            <small>Seconds</small>
 
-<!-- ================================= -->
-<!-- Footer -->
-<!-- ================================= -->
+        </div>
 
-<footer>
+    </div>
 
-<p>
+    <p class="countText">
 
-Made with endless love ❤️
+        Until Your Birthday 🎂
 
-</p>
+    </p>
 
-<p>
+    <!-- Password -->
 
-Happy Birthday Shayaali ✨
+    <div class="password-box">
 
-</p>
+        <input
 
-</footer>
-<!-- ================================= -->
-<!-- Hidden Birthday Gift -->
-<!-- ================================= -->
+        type="password"
 
-<div id="giftPopup" class="popup">
+        id="password"
 
-    <div class="popupContent">
+        placeholder="Enter Your Nickname">
 
-        <span class="closePopup">&times;</span>
+        <button id="unlock">
 
-        <h1>🎁 A Little Gift For You 🎁</h1>
+            Unlock 💖
 
-        <p>
-            Thank you for filling my life with happiness, laughter,
-            and countless beautiful memories.
-            I hope today makes you feel as loved as you make everyone around you feel.
-        </p>
-
-        <button id="openGift">
-            Open ❤️
         </button>
 
     </div>
 
-</div>
-
-<!-- ================================= -->
-<!-- Theme Toggle -->
-<!-- ================================= -->
-
-<button id="themeToggle">
-
-🌙
-
-</button>
-
-<!-- ================================= -->
-<!-- Secret Messages -->
-<!-- ================================= -->
-
-<div id="secretMessage" class="secretMessage">
-
-💖 I Love You More Than You'll Ever Know 💖
+    <p id="error"></p>
 
 </div>
 
-<!-- ================================= -->
-<!-- Confetti Container -->
-<!-- ================================= -->
+</section>
 
-<div id="confettiContainer"></div>
+<!-- Transition -->
 
-<!-- ================================= -->
-<!-- Page Transition -->
-<!-- ================================= -->
+<div id="transition"></div>
 
-<div class="pageTransition"></div>
-
-<!-- ================================= -->
-<!-- Scripts -->
-<!-- ================================= -->
-
-<script src="js/script.js"></script>
+<script src="js/welcome.js"></script>
 
 </body>
-
 </html>
