@@ -1,0 +1,998 @@
+/* ===========================================
+   RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #120824,
+        #1c1036,
+        #241547,
+        #2d1957
+    );
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+/* ===========================================
+   BACKGROUND
+=========================================== */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-10;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================
+   HERO
+=========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:88px;
+
+    color:#ffd6f3;
+
+    text-shadow:
+
+    0 0 30px rgba(255,160,220,.5);
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:24px;
+
+    color:#f5dfff;
+
+}
+
+/* ===========================================
+   GIFT SECTION
+=========================================== */
+
+.giftSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#giftBox{
+
+    width:240px;
+
+    height:240px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.5s;
+
+}
+
+#giftBox:hover{
+
+    transform:scale(1.06);
+
+}
+
+.box{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:240px;
+
+    height:170px;
+
+    background:#ff4f93;
+
+    border-radius:10px;
+
+}
+
+.lid{
+
+    position:absolute;
+
+    top:0;
+
+    width:240px;
+
+    height:70px;
+
+    background:#ff71ad;
+
+    border-radius:10px;
+
+    transition:.8s;
+
+    transform-origin:left center;
+
+}
+
+.ribbonVertical{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:26px;
+
+    height:100%;
+
+    background:#ffe66d;
+
+}
+
+.ribbonHorizontal{
+
+    position:absolute;
+
+    top:60px;
+
+    width:100%;
+
+    height:22px;
+
+    background:#ffe66d;
+
+}
+
+.giftText{
+
+    margin-top:40px;
+
+    font-size:28px;
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ===========================================
+   SURPRISE
+=========================================== */
+
+#surpriseSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    opacity:0;
+
+    transition:1.5s;
+
+    padding:50px;
+
+}
+
+.photoContainer img{
+
+    width:min(420px,90vw);
+
+    border-radius:35px;
+
+    box-shadow:
+
+    0 30px 80px rgba(255,120,200,.35);
+
+}
+
+.birthdayMessage{
+
+    margin-top:50px;
+
+    max-width:900px;
+
+}
+
+.birthdayMessage h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:72px;
+
+    margin-bottom:25px;
+
+}
+
+.birthdayMessage p{
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#f4e8ff;
+
+}
+/* ===========================================
+   FINAL LETTER
+=========================================== */
+
+.finalLetter{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+
+}
+
+.letterCard{
+
+    width:min(900px,92%);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:30px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.35);
+
+}
+
+.letterCard h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:64px;
+
+    color:#ffd6f3;
+
+    margin-bottom:30px;
+
+}
+
+.letterCard p{
+
+    font-size:21px;
+
+    line-height:2;
+
+    color:#f5ebff;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================================
+   QUOTE
+=========================================== */
+
+.quoteSection{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.quoteSection blockquote{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:64px;
+
+    color:#ffe3f6;
+
+    max-width:900px;
+
+    line-height:1.5;
+
+    text-shadow:
+        0 0 25px rgba(255,180,220,.25);
+
+}
+
+/* ===========================================
+   THANK YOU
+=========================================== */
+
+.thankYou{
+
+    min-height:70vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.thankYou h2{
+
+    font-size:54px;
+
+    color:#ffd4ef;
+
+    margin-bottom:30px;
+
+}
+
+.thankYou p{
+
+    max-width:900px;
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#f6efff;
+
+}
+
+/* ===========================================
+   SIGNATURE
+=========================================== */
+
+.signatureSection{
+
+    min-height:60vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.signatureSection p{
+
+    font-size:24px;
+
+    color:#e9d8ff;
+
+}
+
+.signatureSection h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:80px;
+
+    margin-top:20px;
+
+    color:#ffd6f3;
+
+}
+
+/* ===========================================
+   REPLAY BUTTON
+=========================================== */
+
+.replaySection{
+
+    min-height:50vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding-bottom:100px;
+
+}
+
+#replayButton{
+
+    padding:22px 55px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        45deg,
+        #ff4f93,
+        #ff87c0
+    );
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:
+        0 20px 50px rgba(255,80,160,.35);
+
+}
+
+#replayButton:hover{
+
+    transform:translateY(-8px) scale(1.05);
+
+    box-shadow:
+        0 30px 70px rgba(255,80,160,.5);
+
+}
+
+/* ===========================================
+   FIREWORKS & CONFETTI
+=========================================== */
+
+#fireworks,
+#confetti,
+#cursorSparkles{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:999;
+
+}
+/* ===========================================
+   FLOATING STARS
+=========================================== */
+
+.stars::before,
+.stars::after{
+
+    content:"✦";
+
+    position:absolute;
+
+    color:white;
+
+    font-size:20px;
+
+    opacity:.8;
+
+    animation:twinkle 3s ease-in-out infinite;
+
+}
+
+.stars::before{
+
+    top:15%;
+
+    left:20%;
+
+}
+
+.stars::after{
+
+    top:60%;
+
+    right:18%;
+
+    animation-delay:1.5s;
+
+}
+
+/* ===========================================
+   FLOATING HEARTS
+=========================================== */
+
+.hearts::before,
+.hearts::after{
+
+    content:"💖";
+
+    position:absolute;
+
+    font-size:34px;
+
+    opacity:.5;
+
+    animation:heartFloat 16s linear infinite;
+
+}
+
+.hearts::before{
+
+    left:15%;
+
+}
+
+.hearts::after{
+
+    left:82%;
+
+    animation-delay:8s;
+
+}
+
+/* ===========================================
+   FLOWER PETALS
+=========================================== */
+
+.background::before{
+
+    content:"🌸";
+
+    position:absolute;
+
+    font-size:28px;
+
+    left:40%;
+
+    animation:petalFall 12s linear infinite;
+
+}
+
+.background::after{
+
+    content:"🌸";
+
+    position:absolute;
+
+    font-size:24px;
+
+    left:72%;
+
+    animation:petalFall 15s linear infinite;
+
+    animation-delay:5s;
+
+}
+
+/* ===========================================
+   GIFT GLOW
+=========================================== */
+
+#giftBox{
+
+    animation:giftGlow 2.5s ease-in-out infinite;
+
+}
+
+@keyframes giftGlow{
+
+    0%,100%{
+
+        filter:drop-shadow(0 0 15px rgba(255,120,180,.4));
+
+    }
+
+    50%{
+
+        filter:drop-shadow(0 0 45px rgba(255,120,180,.9));
+
+    }
+
+}
+
+/* ===========================================
+   STAR ANIMATION
+=========================================== */
+
+@keyframes twinkle{
+
+    0%,100%{
+
+        opacity:.3;
+
+        transform:scale(.8);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.4);
+
+    }
+
+}
+
+/* ===========================================
+   HEART FLOAT
+=========================================== */
+
+@keyframes heartFloat{
+
+    from{
+
+        transform:translateY(110vh) rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.7;
+
+    }
+
+    to{
+
+        transform:translateY(-120vh) rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================================
+   PETAL FALL
+=========================================== */
+
+@keyframes petalFall{
+
+    from{
+
+        transform:translateY(-80px) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(720deg);
+
+    }
+
+}
+
+/* ===========================================
+   BUTTON PULSE
+=========================================== */
+
+@keyframes pulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+}
+/* ===========================================
+   FADE-IN ANIMATIONS
+=========================================== */
+
+.hero,
+.giftSection,
+#surpriseSection,
+.finalLetter,
+.quoteSection,
+.thankYou,
+.signatureSection,
+.replaySection{
+
+    animation:fadeUp 1.2s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================
+   GIFT OPEN ANIMATION
+=========================================== */
+
+#giftBox.open .lid{
+
+    transform:
+        rotate(-35deg)
+        translateY(-45px)
+        translateX(-15px);
+
+}
+
+#giftBox.open{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================
+   SURPRISE VISIBILITY
+=========================================== */
+
+#surpriseSection.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+#surpriseSection{
+
+    transform:translateY(60px);
+
+}
+
+/* ===========================================
+   BACKGROUND ANIMATION
+=========================================== */
+
+body{
+
+    background-size:300% 300%;
+
+    animation:gradientMove 18s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/* ===========================================
+   IMAGE EFFECT
+=========================================== */
+
+.photoContainer img{
+
+    transition:1s;
+
+}
+
+.photoContainer img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+        0 40px 100px rgba(255,120,200,.45);
+
+}
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+    font-size:60px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.birthdayMessage h1{
+
+    font-size:52px;
+
+}
+
+.birthdayMessage p{
+
+    font-size:18px;
+
+}
+
+.letterCard{
+
+    padding:35px;
+
+}
+
+.letterCard h2{
+
+    font-size:48px;
+
+}
+
+.quoteSection blockquote{
+
+    font-size:46px;
+
+}
+
+.signatureSection h1{
+
+    font-size:58px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+#giftBox{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.box{
+
+    width:180px;
+
+    height:125px;
+
+}
+
+.lid{
+
+    width:180px;
+
+    height:55px;
+
+}
+
+.ribbonHorizontal{
+
+    top:46px;
+
+}
+
+.photoContainer img{
+
+    width:95%;
+
+}
+
+#replayButton{
+
+    width:90%;
+
+    font-size:18px;
+
+    padding:18px;
+
+}
+
+.giftText{
+
+    font-size:22px;
+
+}
+
+}
