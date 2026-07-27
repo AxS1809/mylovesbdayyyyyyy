@@ -1,53 +1,52 @@
-/* ===========================
-   MAGIC CURSOR
-=========================== */
+/* MAGIC CURSOR */
 
 const trail = document.getElementById("cursorTrail");
 
-document.addEventListener("mousemove",(e)=>{
+if (trail) {
 
-    const star=document.createElement("span");
+    document.addEventListener("mousemove", (e) => {
 
-    star.className="cursorStar";
+        const star = document.createElement("span");
 
-    star.style.left=e.clientX+"px";
+        star.className = "cursorStar";
 
-    star.style.top=e.clientY+"px";
+        star.style.left = e.clientX + "px";
+        star.style.top = e.clientY + "px";
 
-    star.style.animationDuration=(0.8+Math.random())+"s";
+        star.style.animationDuration = (0.8 + Math.random()) + "s";
 
-    star.style.transform=`scale(${Math.random()+0.4}) rotate(${Math.random()*360}deg)`;
+        star.style.transform =
+            `scale(${Math.random() + 0.4}) rotate(${Math.random() * 360}deg)`;
 
-    trail.appendChild(star);
+        trail.appendChild(star);
 
-    setTimeout(()=>{
+        setTimeout(() => {
+            star.remove();
+        }, 1200);
 
-        star.remove();
+    });
 
-    },1200);
+}
 
-});
+const card = document.querySelector(".glass-card");
 
-/* Card Tilt */
+if (card) {
 
-const card=document.querySelector(".glass");
+    document.addEventListener("mousemove", (e) => {
 
-document.addEventListener("mousemove",(e)=>{
+        const x = (window.innerWidth / 2 - e.clientX) / 25;
+        const y = (window.innerHeight / 2 - e.clientY) / 25;
 
-    const x=(window.innerWidth/2-e.clientX)/25;
+        card.style.transform =
+            `rotateY(${x}deg) rotateX(${-y}deg)`;
 
-    const y=(window.innerHeight/2-e.clientY)/25;
+    });
 
-    card.style.transform=
+    document.addEventListener("mouseleave", () => {
 
-    `rotateY(${x}deg) rotateX(${-y}deg)`;
+        card.style.transform =
+            "rotateY(0deg) rotateX(0deg)";
 
-});
+    });
 
-document.addEventListener("mouseleave",()=>{
-
-    card.style.transform=
-
-    "rotateY(0deg) rotateX(0deg)";
-
-});
+}
