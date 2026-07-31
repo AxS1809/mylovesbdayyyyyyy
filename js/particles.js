@@ -1,3 +1,17 @@
+const stars = document.getElementById("stars");
+const sparkles = document.getElementById("sparkles");
+const hearts = document.getElementById("hearts");
+const petals = document.getElementById("petals");
+const fireflies = document.getElementById("fireflies");
+const butterflies = document.getElementById("butterflies");
+
+if (!stars || !sparkles || !hearts || !petals || !fireflies || !butterflies) {
+    console.warn("Particle containers not found.");
+} else {
+
+    // EVERYTHING ELSE IN THIS FILE GOES HERE
+
+}
 /* ===========================================
    PREMIUM PARTICLE ENGINE
 =========================================== */

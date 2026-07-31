@@ -11,7 +11,7 @@ const subTyping = document.getElementById("subTyping");
 
 const openBtn = document.getElementById("openBtn");
 
-const transition = document.querySelector(".transition");
+const transition = document.getElementById("transition");
 
 /* ----------------------------------------
         CONTINUE MUSIC
