@@ -1,159 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Shayaali ❤️</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Happy Birthday Shayaali ❤️</title>
 
-    <link rel="stylesheet" href="css/welcome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    <div id="cursorTrail"></div>
 
-<!-- ================= LOADER ================= -->
+<!-- Floating Hearts -->
 
-<div id="loader">
+<div class="hearts"></div>
 
-    <div class="loader-heart">💖</div>
+<!-- Music -->
 
-    <h2>Creating Something Magical...</h2>
+<audio id="music" autoplay loop>
 
-    <div class="loading-bar">
-        <span></span>
-    </div>
-
-</div>
-
-<!-- =============== BACKGROUND ================= -->
-
-<div class="gradient-bg"></div>
-
-<div id="particles"></div>
-
-<!-- =============== MUSIC ================= -->
-
-<div class="music-player">
-
-    <button id="musicBtn">
-
-        ♫
-
-    </button>
-
-</div>
-
-<audio
-id="bgMusic"
-loop>
-
-<source src="The Neighbourhood - Reflections (Lyrics).mp3" type="audio/mpeg">
+<source src="assets/music/piano.mp3" type="audio/mp3">
 
 </audio>
 
-<!-- =============== MAIN ================= -->
+<!-- ===========================
+INTRO
+=========================== -->
 
-<section class="main">
+<section id="intro">
 
-<div class="glass-card">
+<div class="introText">
 
-    <h3 class="welcome">
+<p class="small">
 
-        Welcome 🌸
+Hey...
 
-    </h3>
+</p>
 
-    <h1>
+<h1>
 
-        Shayaali's Birthday Surprise
+Happy Birthday
 
-    </h1>
+<span>
 
-    <!-- Countdown -->
+Shayaali ❤️
 
-    <div class="countdown">
+</span>
 
-        <div>
+</h1>
 
-            <span id="days">00</span>
+<p class="sub">
 
-            <small>Days</small>
+I made something special just for you.
 
-        </div>
+Keep scrolling...
 
-        <div>
-
-            <span id="hours">00</span>
-
-            <small>Hours</small>
-
-        </div>
-
-        <div>
-
-            <span id="minutes">00</span>
-
-            <small>Minutes</small>
-
-        </div>
-
-        <div>
-
-            <span id="seconds">00</span>
-
-            <small>Seconds</small>
-
-        </div>
-
-    </div>
-
-    <p class="countText">
-
-        Until Your Birthday 🎂
-
-    </p>
-
-    <!-- Password -->
-
-    <div class="password-box">
-
-        <input
-
-        type="password"
-
-        id="password"
-
-        placeholder="Enter Your Nickname">
-
-        <button id="unlock">
-
-            Unlock 💖
-
-        </button>
-
-    </div>
-
-    <p id="error"></p>
+</p>
 
 </div>
 
 </section>
 
-<!-- Transition -->
+<!-- ===========================
+CINEMATIC SLIDESHOW
+=========================== -->
 
-<div id="transition"></div>
+<section id="cinema">
 
+<div class="cinemaBox">
 
-<script src="js/particles.js"></script>
-<script src="js/cursor.js"></script>
-<script src="js/music.js"></script>
-<script src="js/welcome.js"></script>
+<img
+id="cinemaImage"
+src="753328987_1960480861334328_7985111761395697710_n.jpg"
+alt="Photo">
 
+<h2 id="cinemaCaption">
+
+The Cutest Girl ❤️
+
+</h2>
+
+</div>
+
+</section>
+
+<!-- ===========================
+TRANSITION
+=========================== -->
+
+<section class="transition">
+
+<h2>
+
+Every picture...
+
+holds a memory.
+
+</h2>
+
+<p>
+
+Every smile.
+
+Every laugh.
+
+Every moment.
+
+Made this little surprise possible.
+
+</p>
+
+</section>
+
+<!-- ===========================
+STORY STARTS
+=========================== -->
+
+<section class="storyTitle">
+
+<h2>
+
+Our Story 🌸
+
+</h2>
+
+<p>
+
+Some memories deserve
+
+their own little place.
+
+</p>
+
+</section>
+
+<!-- ===========================
+MEMORY 1
+=========================== -->
+
+<section class="memory">
+
+<div class="image">
+
+<img src="assets/photos/21.jpg">
+
+</div>
+
+<div class="text">
+
+<h2>
+
+Our Beginning
+
+</h2>
+
+<p>
+
+Write your story here.
+
+How you met.
+
+Your first conversation.
+
+Anything you want.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+MEMORY 2
+=========================== -->
+
+<section class="memory reverse">
+
+<div class="image">
+
+<img src="assets/photos/22.jpg">
+
+</div>
+
+<div class="text">
+
+<h2>
+
+One Of My Favourite Days
+
+</h2>
+
+<p>
+
+Write another beautiful memory.
+
+Something funny.
+
+Something emotional.
+
+Anything.
+
+</p>
+
+</div>
+
+</section>
+<!-- ===========================
+MEMORY 3
+=========================== -->
+
+<section class="memory">
+
+    <div class="image">
+
+        <img src="assets/photos/23.jpg" alt="Memory 3">
+
+    </div>
+
+    <div class="text">
+
+        <h2>Your Smile</h2>
+
+        <p>
+            Every time you smile, everything feels a little brighter.
+            It's one of those little things that can turn an ordinary day
+            into one I'll always remember.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+MEMORY 4
+=========================== -->
+
+<section class="memory reverse">
+
+    <div class="image">
+
+        <img src="assets/photos/24.jpg" alt="Memory 4">
+
+    </div>
+
+    <div class="text">
+
+        <h2>The Little Things</h2>
+
+        <p>
+            It's never just the big moments.
+            It's the random conversations, the laughs,
+            the silly moments and the memories that quietly became my favourites.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+MEMORY 5
+=========================== -->
+
+<section class="memory">
+
+    <div class="image">
+
+        <img src="assets/photos/25.jpg" alt="Memory 5">
+
+    </div>
+
+    <div class="text">
+
+        <h2>Forever My Favourite</h2>
+
+        <p>
+            Looking through these photos made me realise how many amazing
+            memories we've already created...
+            and I hope there are countless more waiting for us.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+ENDING MESSAGE
+=========================== -->
+
+<section class="ending">
+
+    <h2>
+
+        Thank You ❤️
+
+    </h2>
+
+    <p>
+
+        Thank you for every smile.
+
+        <br><br>
+
+        Thank you for every laugh.
+
+        <br><br>
+
+        Thank you for simply being you.
+
+    </p>
+
+</section>
+
+<!-- ===========================
+NEXT PAGE
+=========================== -->
+
+<section class="nextPage">
+
+    <a href="letters.html">
+
+        Read My Letters 💌
+
+    </a>
+
+</section>
+
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
